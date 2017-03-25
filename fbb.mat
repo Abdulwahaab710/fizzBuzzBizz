@@ -1,0 +1,18 @@
+for num = 1:100
+    out = '';
+    if mod(num, 3) == 0
+        out = [out 'Fizz'];
+    end
+    if mod(num, 5) == 0
+        out = [out 'Buzz'];
+    end
+    if mod(num, 7) == 0
+        out = [out 'Bizz'];
+    end
+
+    if isempty(out)
+        disp(num)
+    else
+        disp(out)
+    end 
+end
